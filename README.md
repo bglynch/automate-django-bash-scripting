@@ -27,4 +27,34 @@ First close and then reopen the terminal
 $ run
 ```  
 Open new tab on port 8080 and should see the following screen  
-<img src="https://raw.githubusercontent.com/bglynch/automate-django-bash-scripting/master/images/screengrab-01.png" alt="drawing" height="500px"/>
+<img src="https://raw.githubusercontent.com/bglynch/automate-django-bash-scripting/master/images/screengrab-01.png" height="500px"/>
+
+---
+
+**scripts/b-superuser-migrate.sh**  
+- initial migrate
+- creates superuser
+
+```bash
+$ bash scripts/b-superuser-migrate.sh
+```  
+**Test it worked**  
+Open the app and add /admin to the end of the URL  
+Login using the username and password create when adding superuser  
+Should see the following screen  
+<img src="https://raw.githubusercontent.com/bglynch/automate-django-bash-scripting/master/images/screengrab-02.png" height="500px"/>  
+
+---
+
+**scripts/c-static-files.sh**  
+- create static directory
+- populate directory with ./static/css/style.css
+- populate directory with ./static/js/custom.js
+- populate directory with ./static/images
+- creates templates directory
+- populate directory with ./templates/base.html
+- add path to ./templates to settings.py
+
+```bash
+$ bash scripts/b-superuser-migrate.sh
+```  
