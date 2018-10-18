@@ -1,18 +1,24 @@
+# Bash Scripting for Django App built in Cloud9
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This repo is a collection of scripts that can be used to automate processes in django
 
+## Installation 
+`$ svn export https://github.com/bglynch/automate-django-bash-scripting/trunk/scripts`  
 
-Hi there! Welcome to Cloud9 IDE!
+This imports a directory name 'scripts' which holds the script files
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Usage
+**scripts/a-up-and-running.sh**  
+- installs django 2
+- creates project
+- adds run and PROJECTNAME to bash_alias
+- adds user to ALLOWED_HOSTS in settings.py
+- adds local database to .gitignore
 
-Happy coding!
-The Cloud9 IDE team
+```bash
+$ bash scripts/a-up-and-running.sh <projectname>
+```
+
+Note: <projectname> must adhere to django project naming conventions - ie no spaces  
+
+<img src="https://github.com/bglynch/automate-django-bash-scripting/tree/master/images/screengrab-01.png" alt="drawing" height="100px"/>
