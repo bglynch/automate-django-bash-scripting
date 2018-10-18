@@ -21,4 +21,10 @@ $ bash scripts/a-up-and-running.sh <projectname>
 
 Note: <projectname> must adhere to django project naming conventions - ie no spaces  
 
-<img src="https://github.com/bglynch/automate-django-bash-scripting/tree/master/images/screengrab-01.png" alt="drawing" height="100px"/>
+**Test it worked**  
+First close and then reopen the terminal  
+```bash
+$ run
+```  
+Open new tab on port 8080 and should see the following screen  
+<img src="https://raw.githubusercontent.com/bglynch/automate-django-bash-scripting/master/images/screengrab-01.png" alt="drawing" height="500px"/>

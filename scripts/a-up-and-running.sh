@@ -17,3 +17,4 @@ sed -i "/ALLOWED_HOSTS/s/\[\]/\['$C9_HOSTNAME'\]/g" ./$1/settings.py
 
 # add database to git ignore
 echo db.sqlite3 > .gitignore
+
