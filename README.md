@@ -9,7 +9,7 @@ This imports a directory name 'scripts' which holds the script files
 
 ## Usage
 **scripts/a-up-and-running.sh**  
-- installs django 2
+- installs [django 2](https://docs.djangoproject.com/en/2.0/)
 - creates project
 - adds run and PROJECTNAME to bash_alias
 - adds user to ALLOWED_HOSTS in settings.py
@@ -56,5 +56,17 @@ Should see the following screen
 - add path to ./templates to settings.py
 
 ```bash
-$ bash scripts/b-superuser-migrate.sh
-```  
+$ bash scripts/c-static-files.sh
+``` 
+
+---
+
+**scripts/d-media.sh**  
+- create media directory
+- install [Pillow](https://github.com/python-pillow/Pillow)
+- add media context processor to settings.py
+- add MEDIA_URL and MEDIA_ROOT to base of settings.py
+
+```bash
+$ bash scripts/d-media.sh
+``` 
